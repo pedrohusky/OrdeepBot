@@ -1,0 +1,48 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="32" viewBox="0 0 32 32" width="32"
+	xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<filter filterUnits="objectBoundingBox" height="111.7%" id="a" width="111.7%" x="-5.8%"
+			y="-4.2%">
+			<feOffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1" />
+			<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5" />
+			<feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out"
+				result="shadowBlurOuter1" />
+			<feColorMatrix in="shadowBlurOuter1"
+				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0" />
+		</filter>
+		<filter id="d">
+			<feColorMatrix in="SourceGraphic"
+				values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0" />
+		</filter>
+		<filter filterUnits="objectBoundingBox" height="137.5%" id="e" width="157.7%" x="-28.8%"
+			y="-18.8%">
+			<feOffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1" />
+			<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5" />
+			<feColorMatrix in="shadowBlurOuter1"
+				result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204257246 0" />
+			<feMerge>
+				<feMergeNode in="shadowMatrixOuter1" />
+				<feMergeNode in="SourceGraphic" />
+			</feMerge>
+		</filter>
+		<linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+			<stop offset="0%" stop-color="#FFF" stop-opacity=".5" />
+			<stop offset="100%" stop-opacity=".5" />
+		</linearGradient>
+		<circle cx="16" cy="15" id="b" r="15" />
+	</defs>
+	<g fill="none" fill-rule="evenodd">
+		<use fill="#000" filter="url(#a)" xlink:href="#b" />
+		<use fill="#006AE3" xlink:href="#b" />
+		<use style="mix-blend-mode:soft-light" fill="url(#c)" xlink:href="#b" />
+		<circle cx="16" cy="15" r="14.5" stroke="#000" stroke-linejoin="square"
+			stroke-opacity=".097" />
+		<g filter="url(#d)">
+			<g fill="#FFF" fill-rule="nonzero" filter="url(#e)" transform="translate(9.5 5)">
+				<path d="M5.71 16.36V3.754h1.372V16.36z" />
+				<path
+					d="M12.697 7.954l-4.24 1.124-.945-4.4 1.26-.284.498 2.084s1.145-1.878-.382-3.824c-.9-1-1.327-1.042-2.336-1.2-.888-.127-2.952.173-3.567 2.582-.26 1.552.033 2.7 2.033 4.203l-.112 1.673S2.673 8.339 2.097 7.236c-.445-.873-1.21-2.597.17-4.997.742-1.2 2.206-2.351 4.785-2.23 1.296.054 4.463 1.64 3.972 5.342-.085.694-.445 1.618-.445 1.618l1.74-.387.378 1.372zm-2.421 9.864c-.776 1.179-2.27 2.29-4.843 2.103-1.297-.088-4.418-1.758-3.83-5.446.103-.69.488-1.603.488-1.603l-1.749.34L0 11.833l4.27-1.012.83 4.424-1.27.252-.442-2.1s-1.194 1.845.279 3.833c.872 1.024 1.297 1.076 2.306 1.26.882.152 2.954-.096 3.633-2.487.3-1.543.036-2.7-1.921-4.258l.157-1.67s2.191 1.63 2.737 2.749c.418.888 1.136 2.633-.303 4.994z" />
+			</g>
+		</g>
+	</g>
+</svg>

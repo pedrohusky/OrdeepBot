@@ -1,0 +1,29 @@
+<svg id="logo" viewBox="0 0 249.5 249.5" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<style>.cls-1{fill:#262321}.cls-2{fill:#f7d00f}</style>
+	</defs>
+	<title>Pundi X (NPXS)</title>
+	<circle class="cls-1" cx="124.75" cy="124.75" id="circle" r="124.75" />
+	<g id="x">
+		<g data-name="1" id="_1">
+			<rect class="cls-2" height="71.85" transform="translate(-60.29 87.99) rotate(-45)" width="13.54" x="98.08"
+				y="68.63" />
+		</g>
+		<g data-name="2" id="_2">
+			<rect class="cls-2" height="71.85" transform="translate(-90.87 161.81) rotate(-45)" width="13.54" x="171.9"
+				y="142.44" />
+		</g>
+		<g data-name="3" id="_3">
+			<rect class="cls-2" height="13.56" transform="translate(-75.6 124.96) rotate(-45)" width="13.54" x="135.05"
+				y="134.74" />
+		</g>
+		<g data-name="4" id="_4">
+			<rect class="cls-2" height="13.54" transform="translate(-38.9 140.38) rotate(-45)" width="71.85" x="142.87"
+				y="98.15" />
+		</g>
+		<g data-name="5" id="_5">
+			<rect class="cls-2" height="13.54" transform="translate(-112.46 109.91) rotate(-45)" width="71.85" x="69.3"
+				y="171.72" />
+		</g>
+	</g>
+</svg>

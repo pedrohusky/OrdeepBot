@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.global_options.GlobalOptions"
+    tools:ignore="SpeakableTextPresentCheck">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/optionEnableBuyName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Enable BUY"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/optionEnableBuyDescription"
+            app:layout_constraintEnd_toStartOf="@id/optionEnableBuyChip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/optionEnableBuyDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Enable BUY for all coins in global mode."
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/divider"
+            app:layout_constraintEnd_toEndOf="@id/optionEnableBuyName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/optionEnableBuyName"
+            app:layout_constraintTop_toBottomOf="@+id/optionEnableBuyName" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/optionEnableBuyChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/optionEnableBuyDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/optionEnableBuyName"
+            app:layout_constraintTop_toTopOf="@id/optionEnableBuyName" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/optionEnableSellName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optionEnableBuyDescription" />
+
+        <TextView
+            android:id="@+id/optionEnableSellName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Enable SELL"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/optionEnableSellDescription"
+            app:layout_constraintEnd_toStartOf="@+id/optionEnableSellChip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/optionEnableSellDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Enable SELL for all coins in global mode."
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/optionEnableSellName"
+            app:layout_constraintStart_toStartOf="@id/optionEnableSellName"
+            app:layout_constraintTop_toBottomOf="@+id/optionEnableSellName" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/optionEnableSellChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/optionEnableSellDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/optionEnableSellName"
+            app:layout_constraintTop_toTopOf="@id/optionEnableSellName" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/optionProfitName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/optionEnableSellDescription" />
+
+        <TextView
+            android:id="@+id/optionProfitName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Profit Percentage"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/optionProfitDescription"
+            app:layout_constraintEnd_toStartOf="@id/optionProfitValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+        <TextView
+            android:id="@+id/optionProfitDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Defines a profit in percent to sell the coins at."
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/optionProfitName"
+            app:layout_constraintStart_toStartOf="@id/optionProfitName"
+            app:layout_constraintTop_toBottomOf="@id/optionProfitName" />
+
+        <EditText
+            android:id="@+id/optionProfitValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="1.1"
+            android:inputType="number|numberDecimal"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/optionProfitDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/optionProfitName"
+            app:layout_constraintTop_toTopOf="@id/optionProfitName" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/optionLossPercentageName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/optionProfitDescription" />
+
+        <TextView
+            android:id="@+id/optionLossPercentageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Loss Percentage"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/optionLossPercentageDescription"
+            app:layout_constraintEnd_toStartOf="@+id/optionLossPercentageValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/optionLossPercentageDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Defines a loss in percent to sell the coins at."
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider5"
+            app:layout_constraintEnd_toEndOf="@id/optionLossPercentageName"
+            app:layout_constraintStart_toStartOf="@id/optionLossPercentageName"
+            app:layout_constraintTop_toBottomOf="@+id/optionLossPercentageName" />
+
+        <EditText
+            android:id="@+id/optionLossPercentageValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="-1.1"
+            android:inputType="number|numberDecimal"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/optionLossPercentageDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/optionLossPercentageName"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/optionBalancePercentName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/optionLossPercentageDescription" />
+
+        <TextView
+            android:id="@+id/optionBalancePercentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Min. Buy Amount"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/optionBalancePercentDescription"
+            app:layout_constraintEnd_toStartOf="@+id/optionBalancePercentValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <TextView
+            android:id="@+id/optionBalancePercentDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Defines a a minimum amount to buy the coins."
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider6"
+            app:layout_constraintEnd_toEndOf="@id/optionBalancePercentName"
+            app:layout_constraintStart_toStartOf="@id/optionBalancePercentName"
+            app:layout_constraintTop_toBottomOf="@+id/optionBalancePercentName" />
+
+        <EditText
+            android:id="@+id/optionBalancePercentValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="10.0"
+            android:inputType="number|numberDecimal"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/optionBalancePercentDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/optionBalancePercentName"
+            app:layout_constraintTop_toTopOf="@id/optionBalancePercentName" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@id/optionTestWalletOnName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/optionBalancePercentDescription" />
+
+        <TextView
+            android:id="@+id/optionTestWalletOnName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Test Wallet Enabled"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/optionTestWalletOnDescription"
+            app:layout_constraintEnd_toStartOf="@id/optionTestWalletOnChip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+        <TextView
+            android:id="@+id/optionTestWalletOnDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Enables test wallet."
+            app:layout_constraintBottom_toTopOf="@id/testExpandableLayout"
+            app:layout_constraintEnd_toEndOf="@id/optionTestWalletOnName"
+            app:layout_constraintStart_toStartOf="@id/optionTestWalletOnName"
+            app:layout_constraintTop_toBottomOf="@+id/optionTestWalletOnName" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/optionTestWalletOnChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/optionTestWalletOnDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/optionTestWalletOnName"
+            app:layout_constraintTop_toTopOf="@id/optionTestWalletOnName" />
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/testExpandableLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:el_duration="1000"
+            app:el_expanded="false"
+            app:el_parallax="0.5"
+            app:layout_constraintBottom_toTopOf="@id/divider7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/optionTestWalletOnDescription">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTestWalletAssets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="?attr/colorOnPrimary"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="4dp"
+                app:layout_constraintBottom_toTopOf="@id/divider7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/optionTestWalletOnDescription">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/testWalletAssets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="2dp"
+                        android:text="Test Wallet Assets"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorSecondary"
+                        android:textSize="20sp" />
+
+                    <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                        android:id="@+id/spinnerTestWallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:minHeight="48dp"
+                        app:hintText="Select pairs for Test Wallet"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@id/cardPairWhitelist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/testExpandableLayout" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPairWhitelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="?attr/colorOnPrimary"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="5dp"
+            app:layout_constraintBottom_toTopOf="@id/divider8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/optionPairWhitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Pairs Whitelist"
+                    android:textAlignment="center"
+                    android:textColor="?attr/colorSecondary"
+                    android:textSize="20sp" />
+
+                <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                    android:id="@+id/spinnerPairs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:minHeight="48dp"
+                    app:hintText="Select pairs to whitelist"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@id/defaultSettingButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardPairWhitelist" />
+
+        <Button
+            android:id="@+id/defaultSettingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E44E4E"
+            android:text="Default Settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

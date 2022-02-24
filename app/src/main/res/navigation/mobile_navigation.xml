@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_insight">
+
+    <fragment
+        android:id="@+id/navigation_portfolio"
+        android:name="com.example.ordeepbot.ui.portfolio.PortFolioFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_portfolio" />
+
+    <fragment
+        android:id="@+id/navigation_insight"
+        android:name="com.example.ordeepbot.ui.insight.InsightFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_insight" />
+
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.example.ordeepbot.symbol.SymbolDetailsFragment"
+        android:label="Coin stats"
+        tools:layout="@layout/fragment_symbol_details" />
+    <fragment
+        android:id="@+id/navigation_globalOptions"
+        android:name="com.example.ordeepbot.ui.global_options.GlobalOptions"
+        android:label="Configure"
+        tools:layout="@layout/fragment_global_options" />
+    <fragment
+        android:id="@+id/navigation_trades"
+        android:name="com.example.ordeepbot.ui.trades.TradesFragment"
+        android:label="Trades"
+        tools:layout="@layout/fragment_trades" />
+</navigation>

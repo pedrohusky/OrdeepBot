@@ -1,0 +1,48 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="32" viewBox="0 0 32 32" width="32"
+	xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<filter filterUnits="objectBoundingBox" height="111.7%" id="a" width="111.7%" x="-5.8%"
+			y="-4.2%">
+			<feOffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1" />
+			<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5" />
+			<feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out"
+				result="shadowBlurOuter1" />
+			<feColorMatrix in="shadowBlurOuter1"
+				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0" />
+		</filter>
+		<filter id="d">
+			<feColorMatrix in="SourceGraphic"
+				values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0" />
+		</filter>
+		<filter filterUnits="objectBoundingBox" height="134.1%" id="e" width="134.1%" x="-17%"
+			y="-17%">
+			<feOffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1" />
+			<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5" />
+			<feColorMatrix in="shadowBlurOuter1"
+				result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204257246 0" />
+			<feMerge>
+				<feMergeNode in="shadowMatrixOuter1" />
+				<feMergeNode in="SourceGraphic" />
+			</feMerge>
+		</filter>
+		<linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+			<stop offset="0%" stop-color="#FFF" stop-opacity=".5" />
+			<stop offset="100%" stop-opacity=".5" />
+		</linearGradient>
+		<circle cx="16" cy="15" id="b" r="15" />
+	</defs>
+	<g fill="none" fill-rule="evenodd">
+		<use fill="#000" filter="url(#a)" xlink:href="#b" />
+		<use fill="#FF2D55" xlink:href="#b" />
+		<use style="mix-blend-mode:soft-light" fill="url(#c)" xlink:href="#b" />
+		<circle cx="16" cy="15" r="14.5" stroke="#000" stroke-linejoin="square"
+			stroke-opacity=".097" />
+		<g filter="url(#d)">
+			<g filter="url(#e)" transform="translate(5 4)">
+				<path
+					d="M7.793 6.534L.748 14.988A10.912 10.912 0 010 11C0 4.923 4.923 0 11 0c6.078 0 11 4.923 11 11 0 3.36-1.507 6.369-3.883 8.387H3.883A11.511 11.511 0 012.2 17.6h12.562v-4.763l3.965 4.763H19.8l-5.043-6.05-1.392 1.672-5.572-6.688zM14.758 4.4a2.751 2.751 0 000 5.5 2.751 2.751 0 000-5.5zM7.794 2.409a1.376 1.376 0 100 2.751 1.376 1.376 0 000-2.751zM4.989 20.212h12.023A10.97 10.97 0 0111 22a10.97 10.97 0 01-6.011-1.788zm7.843-6.346l-2.426 2.909H1.639a11.056 11.056 0 01-.891-1.787h7.045V7.82l5.038 6.045z"
+					fill="#16141A" fill-rule="nonzero" />
+			</g>
+		</g>
+	</g>
+</svg>

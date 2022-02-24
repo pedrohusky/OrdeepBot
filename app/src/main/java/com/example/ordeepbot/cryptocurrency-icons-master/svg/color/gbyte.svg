@@ -1,0 +1,18 @@
+<svg viewBox="0 0 32 32"
+	xmlns="http://www.w3.org/2000/svg">
+	<g
+		fill="none"
+		fill-rule="evenodd">
+		<circle
+			cx="16"
+			cy="16"
+			fill="#302C2C"
+			fill-rule="nonzero"
+			r="16" />
+		<circle
+			cx="16"
+			cy="16"
+			fill="#FFF"
+			r="11" />
+	</g>
+</svg>
